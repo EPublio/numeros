@@ -1,0 +1,31 @@
+.container{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+  }
+.borda{
+    border: 1px solid white;
+    width: 20%;
+    margin: 0 auto;
+}
+.num{
+    text-align: center;
+    line-height: 4rem;
+    min-height: 4rem;
+    margin: .5rem;
+    font-size: 2.2rem;
+}
+
+.botao1{
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width:1300px){
+    .borda{
+        width: 70%;
+    }
+}
