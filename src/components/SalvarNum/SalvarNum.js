@@ -43,8 +43,6 @@ const SalvarNum = ( {num} ) => {
             <button onClick={handleSave}>Salvar Número</button>
             <p className={styles.msg} style={{visibility: visivel ? 'visible':'hidden'}}>{msg}</p>
         </div>
-     
     );
-}
-
+};
 export default SalvarNum;

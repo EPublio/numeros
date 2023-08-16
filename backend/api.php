@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         echo json_encode(['msg' => 'Número salvo com sucesso!']);
     } else {
         http_response_code(400);
-        echo json_encode(['msg' => 'Número inválido!']);
+        echo json_encode(['msg' => 'Número inválido, tente gerar um novo número!']);
     }
 }
 ?>

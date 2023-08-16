@@ -20,15 +20,17 @@ const RequestNum = () => {
         } else {
           setCor("red");
         }
-      } catch (error) {
+      }catch (error) {
         console.error(error);
+        setNum("Erro de conexão.")
+        setCor("white");
       }
     };
 
   return (
     <div className={styles.container}>
         <div className={styles.borda}>
-          <h1 className={styles.num} style={{color:cor}}>{num}</h1>
+          <h2 className={styles.num} style={{color:cor}}>{num}</h2>
           <div className={styles.main}>
             <div>
               <button className={styles.botao1} onClick={fetchNumero}>Buscar número</button>
